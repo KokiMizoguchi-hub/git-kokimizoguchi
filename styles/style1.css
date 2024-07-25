@@ -1,0 +1,118 @@
+@import url(sanitize.css);
+
+body { 
+    background-color: aliceblue;
+    padding: 10px;
+    font-size: 14px;
+    color: rgb(48, 43, 37);
+}
+
+header {
+    background-color: #422814;
+    padding: 10px;
+    color: antiquewhite;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    font-family: serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+section img {
+    display: flex;
+    width: 300px;
+    height: auto;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+}
+
+.information h1 {
+    background-color: red;
+    padding: 2px 3px;
+
+}
+
+.description img{
+    float: left;
+    margin: 0 10px 0 10px;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+h2 {
+    clear: both;
+}
+
+.songs{
+    clear: both;
+}
+
+.songs h2 {
+    font-size: 1em;
+    font-weight: normal;
+    background-color: #e6e4e6;
+    padding: 5px 10px;
+}
+
+.songs ol {
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.songs li {
+    border-bottom: 1px solid #ccc;
+    padding: 5px 10px;
+}
+
+section {
+    padding: 20px;
+    background-color: #fff;
+}
+
+footer {
+    text-align: center;
+    font-size: .8em;
+    padding: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .description img {
+        float: none;
+        margin: 10px auto;
+        display: block;
+    }
+    
+    header h1 {
+        font-size: 12px;
+    }
+
+    .information h1 { 
+        font-size: 14px;
+    }
+    
+    .song ol {
+        display: block;
+    }
+}
+
+.description img:hover {
+    opacity: .5;
+}
+
