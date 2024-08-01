@@ -1,0 +1,23 @@
+.three-dot-spinner { 
+    text-align: center;
+
+    & div {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-color: $cBlack;
+    }
+}
+
+@keyframes sk-bouncedelay {
+    0% {
+        transform: scale(0);
+    }
+    40% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(1);
+    }
+}
+
